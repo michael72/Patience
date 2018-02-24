@@ -1,3 +1,5 @@
+# code from https://github.com/alehander42/zero-functional
+
 import strutils, sequtils, macros, options, sets
 
 const iteratorVariableName = "it"
