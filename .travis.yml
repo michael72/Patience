@@ -1,0 +1,17 @@
+language: c
+compiler:
+  - gcc
+before_install:
+  - git clone -b devel git://github.com/nim-lang/Nim.git --depth 1
+  - cd Nim
+  - git clone --depth 1 git://github.com/nim-lang/csources
+  - cd csources && sh build.sh
+  - cd ..
+  - bin/nim c koch
+  - bin/nim -d:release c compiler/nim.nim
+  - cp compiler/nim bin/nim
+  - export PATH=$PWD/bin:$PATH
+  - cd ..
+script:
+- nim c --run tests/base/packtest.nim
+- nim c --run tests/base/cardtest.nim
