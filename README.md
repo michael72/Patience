@@ -11,3 +11,9 @@ cd src\view\ascii
 nim c consolegame.nim
 consolegame.exe
 ```
+
+
+Current games:
+
+- Petit Napoleon
+    - [Description in German](http://www.juhl.de/patiencen/index.php?&nr=22)
