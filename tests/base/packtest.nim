@@ -1,6 +1,6 @@
 import unittest
 
-import ../src/pack
+import pack
 
 suite "Check card pack":
   test "check createPack for known sizes":

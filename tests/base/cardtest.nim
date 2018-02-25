@@ -1,6 +1,6 @@
 import unittest
 
-import ../src/card
+import base.card
 
 suite "Check card":
   test "Check symbol":
